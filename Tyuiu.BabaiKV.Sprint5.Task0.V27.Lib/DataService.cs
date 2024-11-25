@@ -6,8 +6,8 @@ namespace Tyuiu.BabaiKV.Sprint5.Task0.V27.Lib
     {
         public string SaveToFileTextData(int x)
         {
-            string path = $@"{Directory.GetCurrentDirectory()}\outPutFileTask0.txt";
-            double z = Math.Pow((int)x-1,(3*(int)x+1));
+            string path = Path.Combine(Path.GetTempPath(), "OutPutFileTask0.txt");
+            double z = Math.Pow((x - 1), (3 * x + 1));
             z = Math.Round(z, 3);
             File.WriteAllText(path, Convert.ToString(z));
             return path;
