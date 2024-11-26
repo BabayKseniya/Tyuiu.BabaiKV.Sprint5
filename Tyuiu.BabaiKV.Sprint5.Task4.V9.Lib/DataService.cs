@@ -10,7 +10,7 @@ namespace Tyuiu.BabaiKV.Sprint5.Task4.V9.Lib
         {
             string X = File.ReadAllText(path);
             double strX = double.Parse(X, CultureInfo.InvariantCulture);
-            double res = Math.Round(1/(Math.Sin(Convert.ToInt32(strX))) + Math.Pow(Convert.ToInt32(strX), 2),3);
+            double res = Math.Round((1 / Math.Sin(Convert.ToDouble(strX)) + Convert.ToDouble(strX) * Convert.ToDouble(strX)), 3);
             return res;
         }
     }
