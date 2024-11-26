@@ -38,7 +38,7 @@ namespace Tyuiu.BabaiKV.Sprint5.Task7.V28.Lib
                             previousWasSpace = false;
                         }
                     }
-                    File.WriteAllText(pathSaveFile, strLine);
+                    File.AppendAllText(pathSaveFile, strLine+Environment.NewLine);
 
                 }
             }
