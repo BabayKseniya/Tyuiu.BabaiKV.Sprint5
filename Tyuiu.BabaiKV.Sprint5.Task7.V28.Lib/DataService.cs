@@ -8,7 +8,7 @@ namespace Tyuiu.BabaiKV.Sprint5.Task7.V28.Lib
         public string LoadDataAndSave(string path)
         {
             int s = 0;//chitayu
-            string pathSaveFile = $@"{Directory.GetCurrentDirectory()}\OutPutFileTask7V28";
+            string pathSaveFile = Path.Combine(Path.GetTempPath(), "OutPutFileTask7V28.txt");
             FileInfo fileInfo = new FileInfo(path);
             bool fileExists = fileInfo.Exists;
             if (fileExists)
