@@ -16,8 +16,8 @@ namespace Tyuiu.BabaiKV.Sprint5.Task7.V28
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            string path = @"C:\DataSprint5\InPutDataFileTask7V28.txt";
-            string pathSaveFile = @"C:\DataSprint5\OutPutDataFileTask7V28.txt";
+            string path = Path.Combine(new string[] { "C:", "DataSprint5", "InPutDataFileTask7V28.txt" }); ;
+            string pathSaveFile = Path.Combine(new string[] { "C:", "DataSprint5", "OutPutDataFileTask7V28.txt" });
             Console.WriteLine("Данные в файле " + path);
 
 
